@@ -52,10 +52,8 @@
           <p class="lexend-menu" style="margin: 4em 0 1vw 0; font-size: 2em; color: #F090A7">Welcome to my Portfolio</p>
           <p class="lexend-menu" style="font-size: 4em;">Hi! I'm Zeng Zhiyu</p>
           <p class="lexend-menu" style="font-size: 2rem; color: #789828">CUC Student</p>
-          <p class="lexend-menu" style="font-size: 1.2em">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          <p class="lexend-menu" style="font-size: 1em">
+            I am a lively and cheerful girl, love life, like all things related to beauty. At the same time, I have strong leadership and interpersonal skills, and I can handle the relationship with customers well. Of course, regarding my major, advertising and computer, I am also competent!
           </p>
         </div>
         <div class="col-12 col-md-6">
@@ -85,7 +83,7 @@
           <p>GENDER: <span class="pink">Female</span></p>
           <p>STAR SIGN: <span class="blue">Pisces</span></p>
           <p>MBTI: <span class="black">ENFP (sometimes ENFJ) </span></p>
-          <p>EDUCATION: <span class="black">Now CUC</span></p>
+          <p>EDUCATION: <span class="black">Now CUC, major in Computational Advertising</span></p>
           <p>FAVORITES: <span class="pink">All things about beauty,  KPOP</span></p>
           <a href="home.html" class="btn">Explore my Lemonland</a>
         </div>
@@ -127,11 +125,11 @@
       <!-- skills -->
       <div id="scrollspyHeading2" class="container-fluid row">
         <h1 class="heading"><span>My</span> Skills</h1>
-        <div class="chart-container col-sm-4 col-12">
+        <div class="chart-container col-xl-3 col-sm-6 col-12">
           <canvas id="myChart1"></canvas>
           <script type="text/javascript">
             const data1 = {
-            labels: ['Chinese', 'English', 'Korean', 'Japanese', 'Cantonese'],
+            labels: ['Chinese (Simplified)', 'English', 'Korean', 'Japanese', 'Cantonese'],
             datasets: [
               {
                 data: [70, 40, 30, 20, 5],
@@ -140,16 +138,17 @@
             ]
             };
 
-            let myChart = document.getElementById('myChart1').getContext('2d');
+            let myChart1 = document.getElementById('myChart1').getContext('2d');
 
-            let chart = new Chart(myChart, {
+            let chart1 = new Chart(myChart1, {
               type: 'doughnut',
               data: data1,
               options: {
                 responsive: true,
                 plugins: {
                   legend: {
-                    display: false
+                    position: 'bottom',
+                    maxWidth: 100,
                   },
                   title: {
                     display: true,
@@ -160,29 +159,30 @@
             })
           </script>
         </div>
-        <div class="chart-container col-sm-4 col-12">
+        <div class="chart-container col-xl-3 col-sm-6 col-12">
           <canvas id="myChart2"></canvas>
           <script type="text/javascript">
             const data2 = {
-            labels: ['Creativity', 'English', 'Korean', 'Japanese', 'Cantonese'],
+            labels: ['Creativity', 'Interpersonal Skills', 'Copywriting', 'Project Management', 'Digital and Traditional Knowledge'],
             datasets: [
               {
-                data: [70, 40, 30, 20, 5],
+                data: [50, 80, 30, 70, 50],
                 backgroundColor: ['#789828', '#a8c060', '#f090a7', '#b8c8c8', '#d8f0e0'],
               }
             ]
             };
 
-            let myChart = document.getElementById('myChart2').getContext('2d');
+            let myChart2 = document.getElementById('myChart2').getContext('2d');
 
-            let chart = new Chart(myChart, {
+            let chart2 = new Chart(myChart2, {
               type: 'doughnut',
               data: data2,
               options: {
                 responsive: true,
                 plugins: {
                   legend: {
-                    display: false
+                    position: 'bottom',
+                    maxWidth: 100,
                   },
                   title: {
                     display: true,
@@ -193,33 +193,68 @@
             })
           </script>
         </div>
-        <div class="chart-container col-sm-4 col-12">
+        <div class="chart-container col-xl-3 col-sm-6 col-12">
           <canvas id="myChart3"></canvas>
           <script type="text/javascript">
             const data3 = {
-            labels: ['Chinese', 'English', 'Korean', 'Japanese', 'Cantonese'],
+            labels: ['Data Analysis', 'Graphic Design', 'Microsoft Office Suite', 'Spreadsheets', 'Data Visualization'],
             datasets: [
               {
-                data: [70, 40, 30, 20, 5],
+                data: [70, 30, 80, 60, 70],
                 backgroundColor: ['#789828', '#a8c060', '#f090a7', '#b8c8c8', '#d8f0e0'],
               }
             ]
             };
 
-            let myChart = document.getElementById('myChart3').getContext('2d');
+            let myChart3 = document.getElementById('myChart3').getContext('2d');
 
-            let chart = new Chart(myChart, {
+            let chart3 = new Chart(myChart3, {
               type: 'doughnut',
               data: data3,
               options: {
                 responsive: true,
                 plugins: {
                   legend: {
-                    display: false
+                    position: 'bottom',
+                    maxWidth: 100,
                   },
                   title: {
                     display: true,
-                    text: 'Language Skills'
+                    text: 'Computer Skills'
+                  }
+                }
+              },
+            })
+          </script>
+        </div>
+        <div class="chart-container col-xl-3 col-sm-6 col-12">
+          <canvas id="myChart4"></canvas>
+          <script type="text/javascript">
+            const data4 = {
+            labels: ['Web Authoring', 'Money Management', 'Singing', 'Dancing', 'Handcraft'],
+            datasets: [
+              {
+                data: [50, 30, 50, 20, 70],
+                backgroundColor: ['#789828', '#a8c060', '#f090a7', '#b8c8c8', '#d8f0e0'],
+              }
+            ]
+            };
+
+            let myChart4 = document.getElementById('myChart4').getContext('2d');
+
+            let chart4 = new Chart(myChart4, {
+              type: 'doughnut',
+              data: data4,
+              options: {
+                responsive: true,
+                plugins: {
+                  legend: {
+                    position: 'bottom',
+                    maxWidth: 100,
+                  },
+                  title: {
+                    display: true,
+                    text: 'Other Skills'
                   }
                 }
               },
@@ -231,7 +266,32 @@
       <!-- works -->
       <div id="scrollspyHeading3" class="container-fluid row">
         <h1 class="heading"><span>Previous</span> Works</h1>
-
+        <div class="card-container row">
+          <div class="cardd col-12 col-xl-4 col-md-6">
+            <img class="img-fluid" src="img/IMG_1958.JPG">
+            <h4>COMPUTER</h4>
+          </div>
+          <div class="cardd col-12 col-xl-4 col-md-6">
+            <img class="img-fluid" src="img/IMG_1977.JPG">
+            <h4>ADVERTISING</h4>
+          </div>
+          <div class="cardd col-12 col-xl-4 col-md-6">
+            <img class="img-fluid" src="img/IMG_2022.JPG">
+            <h4>PHOTOGRAPHY</h4>
+          </div>
+          <div class="cardd col-12 col-xl-4 col-md-6">
+            <img class="img-fluid" src="img/IMG_1958.JPG">
+            <h4>DRAWING</h4>
+          </div>
+          <div class="cardd col-12 col-xl-4 col-md-6">
+            <img class="img-fluid" src="img/IMG_1977.JPG">
+            <h4>GAME</h4>
+          </div>
+          <div class="cardd col-12 col-xl-4 col-md-6">
+            <img class="img-fluid" src="img/IMG_2022.JPG">
+            <h4>WRITING</h4>
+          </div>
+        </div>
       </div>
 
       <!-- connect -->
